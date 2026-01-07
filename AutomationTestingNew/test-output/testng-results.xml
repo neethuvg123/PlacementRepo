@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-07T14:54:43 IST" name="Default suite" finished-at="2026-01-07T14:54:48 IST" duration-ms="5928">
+    <groups>
+    </groups>
+    <test started-at="2026-01-07T14:54:43 IST" name="Default test" finished-at="2026-01-07T14:54:48 IST" duration-ms="5928">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitalization()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:43 IST" name="browserInitalization" finished-at="2026-01-07T14:54:48 IST" duration-ms="5265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitalization -->
+        <test-method signature="verifyUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:48 IST" name="verifyUserIsAbleToLoginWithValidCredentials" finished-at="2026-01-07T14:54:48 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="browerQuit()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:48 IST" name="browerQuit" finished-at="2026-01-07T14:54:48 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browerQuit -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
