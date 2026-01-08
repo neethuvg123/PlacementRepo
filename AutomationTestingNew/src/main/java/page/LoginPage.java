@@ -11,6 +11,7 @@ public class LoginPage {
 	@FindBy(xpath="//input[@name='username']") WebElement usernametxt;
 	@FindBy(xpath="//input[@name='password']") WebElement passwordtxt;
 	@FindBy(xpath="//button[text()='Sign In']") WebElement siginbtn;
+	@FindBy(xpath="//p[text()='Dashboard']") WebElement dashboard;
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -29,5 +30,9 @@ public class LoginPage {
 	public void clickSignIn()
 	{
 		siginbtn.click();
+	}
+	public boolean dashboardView()
+	{
+		return dashboard.isDisplayed();
 	}
 }
