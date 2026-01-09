@@ -1,25 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-07T14:54:43 IST" name="Default suite" finished-at="2026-01-07T14:54:48 IST" duration-ms="5928">
+  <suite started-at="2026-01-09T09:30:49 IST" name="MultiBrowserTesting" finished-at="2026-01-09T09:31:04 IST" duration-ms="14880">
     <groups>
     </groups>
-    <test started-at="2026-01-07T14:54:43 IST" name="Default test" finished-at="2026-01-07T14:54:48 IST" duration-ms="5928">
+    <test started-at="2026-01-09T09:30:49 IST" name="ChromeBrowserTest" finished-at="2026-01-09T09:30:54 IST" duration-ms="5136">
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitalization()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:43 IST" name="browserInitalization" finished-at="2026-01-07T14:54:48 IST" duration-ms="5265" status="PASS">
+        <test-method is-config="true" signature="browserInitalization(java.lang.String)[pri:0, instance:testscript.LoginTest@47eaca72]" started-at="2026-01-09T09:30:49 IST" name="browserInitalization" finished-at="2026-01-09T09:30:52 IST" duration-ms="3422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitalization -->
-        <test-method signature="verifyUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:48 IST" name="verifyUserIsAbleToLoginWithValidCredentials" finished-at="2026-01-07T14:54:48 IST" duration-ms="457" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@47eaca72]" started-at="2026-01-09T09:30:52 IST" name="verifyUserIsAbleToLoginWithInvalidCredentials" finished-at="2026-01-09T09:30:54 IST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserIsAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="browerQuit()[pri:0, instance:testscript.LoginTest@145f66e3]" started-at="2026-01-07T14:54:48 IST" name="browerQuit" finished-at="2026-01-07T14:54:48 IST" duration-ms="148" status="PASS">
+        </test-method> <!-- verifyUserIsAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="browerQuit()[pri:0, instance:testscript.LoginTest@47eaca72]" started-at="2026-01-09T09:30:54 IST" name="browerQuit" finished-at="2026-01-09T09:30:54 IST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browerQuit -->
       </class> <!-- testscript.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ChromeBrowserTest -->
+    <test started-at="2026-01-09T09:30:49 IST" name="FireFoxBrowserTest" finished-at="2026-01-09T09:31:04 IST" duration-ms="14880">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitalization(java.lang.String)[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:30:49 IST" name="browserInitalization" finished-at="2026-01-09T09:30:56 IST" duration-ms="6831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitalization -->
+        <test-method signature="verifyUserIsAbleToLoginWithValidCredentials()[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:30:56 IST" name="verifyUserIsAbleToLoginWithValidCredentials" finished-at="2026-01-09T09:30:57 IST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="browerQuit()[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:30:57 IST" name="browerQuit" finished-at="2026-01-09T09:30:58 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browerQuit -->
+        <test-method is-config="true" signature="browserInitalization(java.lang.String)[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:30:58 IST" name="browserInitalization" finished-at="2026-01-09T09:31:02 IST" duration-ms="4557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitalization -->
+        <test-method signature="verifyUserIsAbleToLoginWithInvalidCredentials()[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:31:02 IST" name="verifyUserIsAbleToLoginWithInvalidCredentials" finished-at="2026-01-09T09:31:03 IST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="browerQuit()[pri:0, instance:testscript.LoginTest@2aceadd4]" started-at="2026-01-09T09:31:03 IST" name="browerQuit" finished-at="2026-01-09T09:31:04 IST" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browerQuit -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- FireFoxBrowserTest -->
+  </suite> <!-- MultiBrowserTesting -->
 </testng-results>

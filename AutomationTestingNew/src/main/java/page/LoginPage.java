@@ -7,32 +7,39 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	public WebDriver driver;
-	
-	@FindBy(xpath="//input[@name='username']") WebElement usernametxt;
-	@FindBy(xpath="//input[@name='password']") WebElement passwordtxt;
-	@FindBy(xpath="//button[text()='Sign In']") WebElement siginbtn;
-	@FindBy(xpath="//p[text()='Dashboard']") WebElement dashboard;
-	
-	public LoginPage(WebDriver driver)
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+
+	@FindBy(xpath = "//input[@name='username']")
+	WebElement usernametxt;
+	@FindBy(xpath = "//input[@name='password']")
+	WebElement passwordtxt;
+	@FindBy(xpath = "//button[text()='Sign In']")
+	WebElement siginbtn;
+	@FindBy(xpath="//p[text()='Dashboard']")
+	WebElement dashboard;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement alert;
+
+	public LoginPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	
-	public void enterUserName(String username)
-	{
+
+	public void enterUserName(String username) {
 		usernametxt.sendKeys(username);
 	}
-	public void enterPassword(String password)
-	{
+
+	public void enterPassword(String password) {
 		passwordtxt.sendKeys(password);
 	}
-	public void clickSignIn()
-	{
+
+	public void clickSignIn() {
 		siginbtn.click();
 	}
-	public boolean dashboardView()
-	{
+
+	public boolean dashboardView() {
 		return dashboard.isDisplayed();
+	}
+	public boolean alertMessage()
+	{
+		return alert.isDisplayed();
 	}
 }
